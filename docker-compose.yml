@@ -1,0 +1,67 @@
+# compose syntax version.
+version: "3.6"
+
+# services declaration.
+services:
+
+  # Database MySQL
+  mysql:
+    image: mysql:5.7
+    container_name: accounts-database
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=accounts
+      - MYSQL_DATABASE=accounts
+      - MYSQL_USER=accounts
+      - MYSQL_PASSWORD=accounts
+
+  # Web Application
+  api:
+    build:
+      dockerfile: Dockerfile-php-nginx
+      context: ./docker
+    container_name: accounts-api
+    volumes:
+      - .:/var/www/app
+      - dot-config:/home/ambientum/.config
+      - dot-cache:/home/ambientum/.cache
+      - dot-local:/home/ambientum/.local
+      - dot-composer:/home/ambientum/.composer
+    environment:
+      - FRAMEWORK=laravel
+      - XDEBUG_ENABLED=true
+      - OPCACHE_MODE=normal
+      - PHP_MEMORY_LIMIT=256M
+    expose:
+      - "8080"
+      - "80"
+    ports:
+      - "8082:8080"
+    links:
+      - mysql
+
+# volumes declaration.
+volumes:
+  # mysql-data
+  mysql-data:
+    driver: local
+  # dot-config
+  dot-config:
+    driver: local
+  # dot-cache
+  dot-cache:
+    driver: local
+  # dot-local
+  dot-local:
+    driver: local
+  # dot-composer
+  dot-composer:
+    driver: local
+
+networks:
+  default:
+    external:
+      name: kafka
