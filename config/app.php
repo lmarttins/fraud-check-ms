@@ -167,13 +167,13 @@ return [
          */
 
         /*
-         * Support Service Providers...
+         * App Service Providers...
          */
-        Lms\Accounts\Support\Providers\AppServiceProvider::class,
-        Lms\Accounts\Support\Providers\AuthServiceProvider::class,
+        PicPay\App\Providers\AppServiceProvider::class,
+        PicPay\App\Providers\AuthServiceProvider::class,
         // \Lms\Accounts\Support\Providers\BroadcastServiceProvider::class,
-        Lms\Accounts\Support\Providers\EventServiceProvider::class,
-        Lms\Accounts\Support\Providers\RouteServiceProvider::class,
+        PicPay\App\Providers\EventServiceProvider::class,
+        PicPay\App\Providers\RouteServiceProvider::class,
 
         /**
          * Packages Service Providers

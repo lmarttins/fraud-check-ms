@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'topic' => 'cashback',
-    'broker' => '192.168.0.12',
+    'topic' => 'dbserver1.inventory.customers',
+    'broker' => '192.168.0.17',
     'groupId' => 'group-id',
     'securityProtocol' => false,
     'sasl' => [

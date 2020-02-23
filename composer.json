@@ -40,7 +40,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Lms\\Accounts\\": "app/"
+            "PicPay\\FraudDetection\\": "src/",
+            "PicPay\\App\\": "app/"
         },
         "classmap": [
             "database/seeds",

@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    Lms\Accounts\Support\Http\Kernel::class
+    PicPay\App\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    Lms\Accounts\Support\Console\Kernel::class
+    PicPay\App\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    Lms\Accounts\Support\Exceptions\Handler::class
+    PicPay\App\Exceptions\Handler::class
 );
 
 /*
