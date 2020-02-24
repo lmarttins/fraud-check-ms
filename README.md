@@ -1,1 +1,1 @@
-php artisan arquivei:php-kafka-consumer --consumer="Lms\Accounts\Infrastructure\Messaging\Kafka\Consumers\CashbackConsumer" --commit=1 --topic=cashback
+docker-compose -f docker-compose.yml exec fraud-detection php artisan arquivei:php-kafka-consumer --consumer="PicPay\FraudDetection\PersonToPerson\Infrastructure\Messaging\Kafka\Consumers\Listener" --commit=1 --topic=dbserver1.inventory.customers

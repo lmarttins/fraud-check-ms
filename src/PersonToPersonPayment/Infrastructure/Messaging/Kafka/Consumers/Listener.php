@@ -1,15 +1,15 @@
 <?php
 
-namespace PicPay\FraudDetection\Transaction\PersonToPerson\Infrastructure\Messaging\Kafka\Consumers;
+namespace PicPay\FraudDetection\PersonToPerson\Infrastructure\Messaging\Kafka\Consumers;
 
 use Kafka\Consumer\Contracts\Consumer as KafkaConsumer;
 
 /**
- * Class Consumer
+ * Class Listener
  *
  * @package PicPay\FraudDetection\Transaction\PersonToPerson\Infrastructure\Messaging\Kafka\Consumers
  */
-class Consumer extends KafkaConsumer
+class Listener extends KafkaConsumer
 {
     public function handle(string $message): void
     {
