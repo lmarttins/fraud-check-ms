@@ -1,17 +1,17 @@
 <?php
 
-namespace PicPay\FraudCheck\PersonToPersonPayment\Application\Pulse;
+namespace Company\FraudCheck\PersonToPersonPayment\Application\Pulse;
 
-use PicPay\FraudCheck\PersonToPersonPayment\Domain\ValueObject\Payee;
-use PicPay\FraudCheck\PersonToPersonPayment\Domain\ValueObject\Payer;
-use PicPay\FraudCheck\PersonToPersonPayment\Domain\ValueObject\Transaction;
-use PicPay\FraudCheck\Shared\Domain\Transaction\ValueObject\TransactionId;
-use PicPay\FraudCheck\Shared\Domain\ValueObject\ConsumerId;
+use Company\FraudCheck\PersonToPersonPayment\Domain\ValueObject\Payee;
+use Company\FraudCheck\PersonToPersonPayment\Domain\ValueObject\Payer;
+use Company\FraudCheck\PersonToPersonPayment\Domain\ValueObject\Transaction;
+use Company\FraudCheck\Shared\Domain\Transaction\ValueObject\TransactionId;
+use Company\FraudCheck\Shared\Domain\ValueObject\ConsumerId;
 
 /**
  * Class CreateInputCommandHandler
  *
- * @package PicPay\FraudCheck\PersonToPersonPayment\Application\Pulse
+ * @package Company\FraudCheck\PersonToPersonPayment\Application\Pulse
  */
 class CreateInputCommandHandler
 {

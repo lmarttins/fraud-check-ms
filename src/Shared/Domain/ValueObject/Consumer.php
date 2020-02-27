@@ -1,11 +1,11 @@
 <?php
 
-namespace PicPay\FraudCheck\Shared\Domain\ValueObject;
+namespace Company\FraudCheck\Shared\Domain\ValueObject;
 
 /**
  * Class Consumer
  *
- * @package PicPay\FraudCheck\Shared\Domain\ValueObject
+ * @package Company\FraudCheck\Shared\Domain\ValueObject
  */
 abstract class Consumer
 {

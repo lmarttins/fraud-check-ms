@@ -40,8 +40,8 @@
     },
     "autoload": {
         "psr-4": {
-            "PicPay\\FraudCheck\\": "src/",
-            "PicPay\\App\\": "app/"
+            "Company\\FraudCheck\\": "src/",
+            "Company\\App\\": "app/"
         },
         "classmap": [
             "database/seeds",

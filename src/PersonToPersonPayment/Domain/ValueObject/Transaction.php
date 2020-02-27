@@ -1,13 +1,13 @@
 <?php
 
-namespace PicPay\FraudCheck\PersonToPersonPayment\Domain\ValueObject;
+namespace Company\FraudCheck\PersonToPersonPayment\Domain\ValueObject;
 
-use PicPay\FraudCheck\Shared\Domain\Transaction\ValueObject\TransactionId;
+use Company\FraudCheck\Shared\Domain\Transaction\ValueObject\TransactionId;
 
 /**
  * Class Transaction
  *
- * @package PicPay\FraudCheck\PersonToPersonPayment\Domain\Model
+ * @package Company\FraudCheck\PersonToPersonPayment\Domain\Model
  */
 final class Transaction
 {

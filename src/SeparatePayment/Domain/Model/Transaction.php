@@ -1,11 +1,11 @@
 <?php
 
-namespace PicPay\FraudCheck\SeparatePayment\Domain\Model;
+namespace Company\FraudCheck\SeparatePayment\Domain\Model;
 
 /**
  * Class Transaction
  *
- * @package PicPay\FraudCheck\SeparatePayment\Domain\Model
+ * @package Company\FraudCheck\SeparatePayment\Domain\Model
  */
 final class Transaction
 {

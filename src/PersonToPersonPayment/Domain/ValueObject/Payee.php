@@ -1,13 +1,13 @@
 <?php
 
-namespace PicPay\FraudCheck\PersonToPersonPayment\Domain\ValueObject;
+namespace Company\FraudCheck\PersonToPersonPayment\Domain\ValueObject;
 
-use PicPay\FraudCheck\Shared\Domain\ValueObject\Consumer;
+use Company\FraudCheck\Shared\Domain\ValueObject\Consumer;
 
 /**
  * Class Payee
  *
- * @package PicPay\FraudCheck\PersonToPersonPayment\Domain\Model
+ * @package Company\FraudCheck\PersonToPersonPayment\Domain\Model
  */
 final class Payee extends Consumer
 {
